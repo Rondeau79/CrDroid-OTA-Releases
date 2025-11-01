@@ -1,2 +1,4 @@
-Initial A16 CrDroid Build
-September SPl
+October SPL
+Bump to CrDroid v12.2
+Viper4Android v8.0 shipped
+MotoCam3 v9.0.12.37 shipped
