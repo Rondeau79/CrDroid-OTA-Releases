@@ -1,3 +1,0 @@
-October SPL
-Bump to CrDroid v12.2
-Viper4Android v8.0 shipped
