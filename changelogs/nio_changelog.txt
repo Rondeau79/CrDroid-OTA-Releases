@@ -1,0 +1,218 @@
+====================
+     11-01-2025
+====================
+
+* Bump to crDroid vs. 12.2
+* October SPL
+* Viper4AndroidFX vs 8.0 shipped
+
+====================
+     10-31-2025
+====================
+
+====================
+     10-30-2025
+====================
+
+   * build/make
+320aa0e9f8 envsetup: Build OOT kernel during lunch if needed
+ef8c7e36c6 always use UTC as the time zone for build dates
+
+   * frameworks/base
+9f47a65c3ed3 SystemUI: Prevent NotifCollection illegal state on notification dump
+bc14bfe12505 KeyboxImitationHooks: Abandon generated certs
+
+   * vendor/lineage
+08473b50 envsetup: Set crdroid path for Pixel OOT kernel build
+27e6346c envsetup: Add build_kernel function for Pixel OOT kernel build
+
+====================
+     10-29-2025
+====================
+
+   * bootable/recovery
+170588fe allowing spl downgrade by default
+
+   * build/make
+2ea45bb110 build: Turn off debug props on userdebug builds
+
+   * build/soong
+14da40d10 Revert "gen_build_prop: Set appcompat value of ro.boot.verifiedbootstate to green on non-eng builds"
+
+   * packages/apps/ViPER4AndroidFX
+5054053 Add files via upload
+
+====================
+     10-28-2025
+====================
+
+   * vendor/qcom/opensource/vibrator
+a362998 vibrator: Add support for aw-haptic-hv
+
+====================
+     10-27-2025
+====================
+
+   * frameworks/base
+6cb594df62b1 base: Auto set vbmeta digest and other props [1/2]
+80b9bd1537fe KeyboxImitationHooks: Add modificationTimeMs to key metadata
+3d2f5c457b2a KeyboxImitationHooks: Delete old keys if newer ones fail to generate
+be65e3a0cf7f KeyboxImitationHooks: Ignore keys requiring auth
+ef65bdb65967 Pulse: Do not add listeners if pulse is disabled
+2e89b26c2059 Pulse: Unify pulse running/showing state
+70cbbe2c2d88 Pulse: Do not stop pulse if dozing
+53320b9171f0 Pulse: State enhancements
+
+   * lineage/hudson
+8b59fe9 Regenerate device dependency mappings
+
+   * lineage/mirror
+ba1a243 Updated to 27-Oct-2025 23:01 UTC
+
+   * lineage/wiki
+5d68c6b8 wiki: moto-sm6225: Update maintainers & models
+9bcfeed7 wiki: Add eSIM peripheral for bangkk, fogo and fogos
+
+   * system/core
+083711eb1 init: Auto set vbmeta digest and other props [2/2]
+
+====================
+     10-26-2025
+====================
+
+   * system/core
+49835912a init: Add more properties for spoof
+
+====================
+     10-25-2025
+====================
+
+   * frameworks/base
+c6599619505b SystemUI: Fix stale colors on power menu after UI mode change
+9afa49577ec0 PixelPropsUtils: Use custom spoof provider only when custom keybox is unavailable
+2b872b92e356 PixelPropsUtils: Add custom spoof provider for fake strong integrity
+89da72f26439 KeyboxImitationHooks: Persist generated verified boot hash
+b4522bca23ae Revert "KeyboxImitationHooks: Only generate certificates for play integrity calls"
+344bff99d2c3 switch AppOpsService.getPackagesForOpsForDevice() to ParceledListSlice
+35c8c5db8d53 appops: skip ops for invalid null package during state serialization
+7e4746b88a07 Revert "Null safe package name in AppOps writeState"
+
+   * lineage/wiki
+ce1c8fe8 wiki: Add wikipedia links to IMS quirk description
+
+   * system/core
+9b8145953 init: Spoof encrytion prop as encrypted
+2af3f451e init: Fix and improve safetynet property spoofing
+
+   * vendor/certification
+1ccc95e certification: Update props from comet BP41.250916.010.A1
+
+====================
+     10-24-2025
+====================
+
+   * build/make
+a466e8038f build: Do not leak lineage_ prefixes in build.prop
+
+   * build/soong
+df68e7245 soong: Do not leak lineage_ prefixes in build.prop
+7979cdd5e soong: Turn off debug props on userdebug builds
+
+   * device/lineage/sepolicy
+4fb568a sepolicy: Restrict build version props
+
+   * frameworks/base
+2b2b2be6b271 Fix the ArrayIndexOutOfBoundsException problem in PerformanceTracker.
+f1a0a0216d1b bootanimation: init progress font only if we need it
+ec614474b0a4 Fix the issue of application freezing repeatedly
+b6caf5109421 totalScanTimeMs and totalWifiLockTimeMs may be 0, causing an ArithmeticException and triggering a reboot.
+
+   * lineage/wiki
+773dd834 firmware_update_oplus: Filter out oplusstanvbk for tablets
+
+====================
+     10-23-2025
+====================
+
+   * device/lineage/sepolicy
+a0f70b1 Revert "sepolicy: Allow vending to read spoof xml"
+c182817 sepolicy: Restrict more pixel props
+
+   * frameworks/av
+202b988c54 skip mediametrics when statsd is not available
+dac66d9c79 Revert "MultiAccessUnit reflector helper allocated once per ComponentStore"
+4e29b0c2a6 CameraProviderExtension: add enabled bool and always set torch
+b0b632c28c CameraProviderExtension: Reset strength level on torch off
+aac7a9612f CameraProviderExtension: Update mTorchStrengthLevel with new level
+1f04bf65fc CameraProviderExtension: Return BAD_VALUE for invalid strength level
+07105eceab CameraProviderExtension: Use weak linkage for default implementations
+613e831445 CameraProviderExtension: Inject strength in fixupTorchStrengthTags
+0413b8cd0a camera: Add extension to control torch light strength
+5c2d0bc615 Extends "Camera: Skip stream size check for whitelisted apps"
+630cdc9a2f Fix usb camera number is not correct after plug out.
+1f4b7c9420 updatePolicyState after updating all EffectHandle state.
+4478e499a8 libcameraservice: support disabling torch control support
+331b4d4d6c fixup! av: support per-app volume [1/3]
+53089d6af0 audio: Remove UID check from per-app volume commands
+4890ac980d av: support per-app volume [1/3]
+9e14a3f11d audio: Check MODIFY_AUDIO_ROUTING permission for per-app volume
+1b0d00b958 libcameraservice: Fixup! add TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB
+f92e1364bc libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB
+4a67e8bb22 libcameraservice: Fixup! Add support to set vendor tag with client package name
+587ef2a3fa libcameraservice: Add support to set vendor tag with client package name
+a876089d77 issue: After connecting the Bluetooth earphones and projecting the screen, music will play from the earphones. At this point, disconnect the earphones, click play, and the projection will be silent
+18cf1f7c2b MediaHTTP: resolve mName race condition issue
+991b6b8e09 Fix EglFramebuffer leak
+43416560dc AudioPlaybackCapture: solve patchTrack unable to update speed issue
+5b5e7aae9a Fix SwAudioOutputCollection indexing in closeOutput()
+88a4fcf832 audio policy: Prevent MMAP flag from getting overwritten with VoIP RX and Direct flag
+615bb7a12b Audio: fix ~refbase() crash caused by race condition
+577659596e MediaProfiles: Check before overriding media settings xml
+a50f9b6092 media: Add changes to pick target specific media xml's
+aebef1ece2 media: OMXStore: Import loading libstagefrightdolby
+2df2bbb0e0 OMX: Remove support for prebuilt ac4 decoder
+d22fcecc5e libstagefright: omx: Add support for loading prebuilt ddp and ac4 decoder lib
+f2131ee3ad frameworks/av: Import Xiaomi Image Tags defenitions
+d27b4e68e0 av: Initial support for 24bit encoding and 6 channels
+33f4099b20 nuplayer: Avoid crash when codec fails to load
+2c2283ea50 StagefrightRecorder: Add "set-title" parameter
+178947b187 libstagefright: Allow HFR-60 in HAL-3 recording
+024859def0 libstagefright: Support YVU420SemiPlanar camera format
+236b236086 stagefright: add changes related to high-framerates in CameraSource
+84a3c87b4a camera: Don't segfault if we get a NULL parameter
+653e5a46c8 Camera: Removing cachedump call to miminimize delay during close.
+5bf86c2bbe Camera: Flush Improvements - Result drain optimization
+6eb2692ee4 CameraService: Fix deadlock in binder death cleanup
+f2de029a2e av: Remove restrictions for system audio record
+659ccd3cf2 Camera: Add support for preview frame fd
+8ce5b15b91 fixup! Camera: Skip stream size check for whitelisted apps
+ec092f3709 CAMX: CHI: Added support for handling jpeg debug data.
+2eb98d8339 Effects: Do not allow SW dolby effect to be supsended
+21ab04aa52 Effects: Do not allow ViperFx effect to be supsended
+
+   * frameworks/base
+f2669cebba2b SystemUI: NetworkTraffic: Use proper line spacing
+aeb9c07d5d76 SystemUI: SeekBarViewModel: Cancel polling immediately on scrubbing start
+296f5ea20a1e SystemUI: SeekBarViewModel: Proper MotionEvent handling
+55b62bbff4c6 SystemUI: SeekBarViewModel: Fix duration elvis and clamp in checkPlaybackPosition
+4a92dc2a00f1 Revert "Refresh vpn lockdown allowlist on package added/removed"
+60b6e55efa6a Revert "Fix vpn disconnects during package state changes"
+
+   * hardware/lineage/interfaces
+7d86725 livedisplay: sysfs: chown on boot as well
+3530226 livedisplay: sysfs: Remove non-standard paths
+
+   * lineage/wiki
+b064a6b3 wiki: Improve bootloop definition
+f9bc0a98 wiki: Add definitions for ASB and QPR to glossary
+
+   * packages/apps/LineageParts
+97bde60 DisplayRotation: fix lockscreen rotation hidden on portrait
+
+   * system/core
+a607265bc init: Spoof additional props
+
+   * vendor/lineage
+f799f462 Merge pull request #72 from Olzhas-Kdyr/16.0
+0436095a apn: Add Altel and Tele2
+
