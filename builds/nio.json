@@ -4,13 +4,13 @@
         "maintainer": "David Rondeau (Rondeau79)",
         "oem": "Motorola",
         "device": "Moto G100",
-        "filename": "crDroidAndroid-16.0-20251101-nio-v12.2.zip",
-        "download": "https://sourceforge.net/projects/crdroid-v7-x-sofiar/files/CrDroid/Nio/crDroidAndroid-16.0-20251101-nio-v12.2.zip/download",
-        "timestamp": 1761970797,
-        "md5": "de866778025e7f4f02df7053dd35c189",
-        "sha256": "c5ce952607b628b2611615dc0d007841b77ae98d2ec349d3360677ccf8350f3f",
-        "size": 1289931005,
-        "version": "12.2",
+        "filename": "crDroidAndroid-16.0-20251120-nio-v12.3.zip",
+        "download": "https://sourceforge.net/projects/crdroid-v7-x-sofiar/files/CrDroid/Nio/crDroidAndroid-16.0-20251120-nio-v12.3.zip/download",
+        "timestamp": 1763668561,
+        "md5": "94afb113b98f103b5b5108760fbf6d81",
+        "sha256": "1405baf4afe786e2ebea3c00a0fd2b8b5aa189c6705e75dc4e99e69228e9ae02",
+        "size": 1169310627,
+        "version": "12.3",
         "buildtype": "Monnthly",
         "forum": "https://forum link", 
         "firmware": "https://firmware link",
@@ -19,8 +19,8 @@
         "github": "Rondeau79",
         "sourceforge": "Rondeau97",
         "initial_installation_images": [
-        "boot",
-        "dtbo",
-        "vendor_boot",
+        "boot"
+        "dtbo"
+        "vendor_boot"
   ]
 }
