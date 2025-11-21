@@ -4,13 +4,13 @@
         "maintainer": "David Rondeau (Rondeau79)",
         "oem": "Motorola",
         "device": "Moto Edge 20 Pro",
-        "filename": "crDroidAndroid-16.0-20251102-pstar-v12.2.zip",
-        "download": "https://sourceforge.net/projects/crdroid-v7-x-sofiar/files/CrDroid/Pstar/crDroidAndroid-16.0-20251102-pstar-v12.2.zip/download",
-        "timestamp": 1762064781,
-        "md5": "2d3f862a7478e6f03b45f09ecf32a7d3",
-        "sha256": "eb2021f7ed751a713003d51dee40ccd299d578204c3da439fd5d1f571c5c023f",
-        "size": 1161119125,
-        "version": "12.2",
+        "filename": "crDroidAndroid-16.0-20251120-pstar-v12.3.zip",
+        "download": "https://sourceforge.net/projects/crdroid-v7-x-sofiar/files/CrDroid/Pstar/crDroidAndroid-16.0-20251120-pstar-v12.3.zip/download",
+        "timestamp": 1763697480,
+        "md5": "63144521b3b8d7000a506ce4cb08fb9a",
+        "sha256": "931d089ddedca1dad30f8f31bcee5f1b5674f4c9aeb6f6d98452bebe520deb1f",
+        "size": 1165890025,
+        "version": "12.3",
         "buildtype": "Monnthly",
         "forum": "https://forum link", 
         "firmware": "https://firmware link",
@@ -19,8 +19,8 @@
         "github": "Rondeau79",
         "sourceforge": "Rondeau97",
         "initial_installation_images": [
-        "boot",
-        "dtbo",
-        "vendor_boot",
+        "boot"
+        "dtbo"
+        "vendor_boot"
   ]
 }
